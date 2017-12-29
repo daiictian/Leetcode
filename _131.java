@@ -2,6 +2,15 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+/*
+The solution relies on recursion.
+So let's accume we have a function rec which considers the given string from i+1th index to end of the string
+and returns all possible partitioning. Now all we have to do is to check if the substring from 0 to ith index is a Palindrome.
+If it is, add it to the result returned from the recursive call.
+If it is not, then increment the index passed to the recirsive call and repeat the procedure until the end of the string
+ The basic idea is to select the substring from 0th index to ith index and check
+ 
+*/
 
 class Solution {
     public List<List<String>> partition(String s) {
