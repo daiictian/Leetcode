@@ -10,6 +10,7 @@
  * The solution first creates a circular linked list by pointing the tail to head.
  * Then computes the number of places the rotation has to be done in a circular manner.
  * Finally it identifies the tail in the rotated list and breaks the circular property
+ The time complexity will be O(2n) which can be improved by using anothr method of fast and slow pointers
  */
 class Solution {
     public ListNode rotateRight(ListNode head, int k) {
